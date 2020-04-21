@@ -4,7 +4,7 @@ App is for educational purposes for those interested in Astronomy.
 
 Target audience: For students or the general public interested in some Astronomy
 
-Wireframe: ![](./wireframe/About.png)
+Wireframe: ![](./wireframe/Main.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
