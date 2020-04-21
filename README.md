@@ -1,3 +1,11 @@
+Third party API: https://api.nasa.gov/
+
+App is for educational purposes for those interested in Astronomy.
+
+Target audience: For students or the general public interested in some Astronomy
+
+Wireframe: ![](./wireframe/About.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
