@@ -2,7 +2,7 @@ Third party API: https://api.nasa.gov/
 
 App is for educational purposes for those interested in Astronomy.
 
-Target audience: For students or the general public interested in some Astronomy
+Target audience: For students or the general public interested in some Astronomy or space enthusiasts.
 
 Wireframe: ![](./wireframe/Main.png)
 
