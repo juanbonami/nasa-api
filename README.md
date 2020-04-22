@@ -4,6 +4,8 @@ App is for educational purposes for those interested in Astronomy.
 
 Target audience: For students or the general public interested in some Astronomy or space enthusiasts.
 
+Home page will display photo of the day. User will be able to see a slideshow of pictures captured by the NASA team with discription, and will be able to search for images.
+
 Wireframe: ![](./wireframe/Main.png)
 
 Wireframe: ![](./wireframe/Gallery.png)
