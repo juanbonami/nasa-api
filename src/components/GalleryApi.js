@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import GalleryCard from './GalleryCard';
 
 
 export default class GalleryApi extends Component {
@@ -26,12 +27,11 @@ export default class GalleryApi extends Component {
     }
 
 
-
-
     render() {
+        const { gallery } = this.state;
         return (
             <div>
-
+                <GalleryCard data={gallery} />
             </div>
         )
     }
