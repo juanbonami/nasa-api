@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
-export default class GalleryCard extends Component {
-    render() {
-        return (
-            <div>
+const GalleryCard = (props) => {
+    return (
+        <div>
 
-            </div>
-        )
-    }
+        </div>
+    )
 }
+
+export default GalleryCard;
