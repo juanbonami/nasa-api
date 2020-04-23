@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import "./App.css";
 import AstroApi from "./components/AstroApi";
 
@@ -7,6 +12,11 @@ function App() {
   return (
     <div className="App">
       <AstroApi />
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/gallery">Gallery</Link>
+        <Link to="/about">About</Link>
+      </nav>
     </div>
   );
 }
