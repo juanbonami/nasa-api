@@ -7,6 +7,9 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import AstroApi from "./components/AstroApi";
+import Home from "./components/Home";
+import Gallery from "./components/Gallery";
+import About from "./components/About";
 
 function App() {
   return (
@@ -18,8 +21,15 @@ function App() {
           <Link to="/gallery">Gallery</Link>
           <Link to="/about">About</Link>
         </nav>
+
+        <Switch>
+
+          <Route path="/gallery" component={Gallery} />
+          <Route path="/about" component={About} />
+          <Route path="/" component={AstroApi} />
+        </Switch>
       </Router>
-      <AstroApi />
+      {/* <AstroApi /> */}
     </div>
   );
 }
