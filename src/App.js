@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import AstroApi from "./components/AstroApi";
-import Gallery from "./components/Gallery";
 import About from "./components/About";
 import GalleryApi from "./components/GalleryApi";
 
@@ -23,7 +22,7 @@ function App() {
         </nav>
 
         <Switch>
-          <Route path="/gallery" component={Gallery} />
+          <Route path="/gallery" component={GalleryApi} />
           <Route path="/about" component={About} />
           <Route path="/" component={AstroApi} />
         </Switch>
