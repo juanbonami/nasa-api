@@ -18,7 +18,13 @@ export default class AstroApi extends Component {
     axios
       .get(endPoint + myKey)
       .then((response) => {
-        console.log(response);
+
+        this.setState({
+
+          astronomy: response.data
+
+        })
+        console.log(this.state.astronomy);
       })
       .catch((error) => {
         console.log(error, "Failed to fetch data");
@@ -26,6 +32,9 @@ export default class AstroApi extends Component {
   }
 
   render() {
-    return <div></div>;
+    const { astronomy } = this.state;
+    return (
+      <AstroCard data={astronomy} />
+    )
   }
 }
