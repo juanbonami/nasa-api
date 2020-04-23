@@ -8,6 +8,8 @@ const AstroCard = (props) => {
   return (
     <div>
 
+      <h3>Astronomy Photo of The Day</h3>
+
       <h6>{title}</h6>
 
       <a href={hdurl}>
