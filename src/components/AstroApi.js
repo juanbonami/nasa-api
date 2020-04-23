@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import AstroCard from "./components/AstroCard";
+import AstroCard from "./AstroCard.js";
 import axios from "axios";
 
 export default class AstroApi extends Component {
-  constructor(propr) {
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -16,7 +16,7 @@ export default class AstroApi extends Component {
     const endPoint = "https://api.nasa.gov/planetary/apod?api_key=";
 
     axios
-      .get(myKey + endPoint)
+      .get(endPoint + myKey)
       .then((response) => {
         console.log(response);
       })

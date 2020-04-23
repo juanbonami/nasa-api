@@ -1,10 +1,14 @@
 import React from "react";
-import axios from "axios";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import "./App.css";
+import AstroApi from "./components/AstroApi";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <AstroApi />
+    </div>
+  );
 }
 
 export default App;
