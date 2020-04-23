@@ -11,12 +11,15 @@ import AstroApi from "./components/AstroApi";
 function App() {
   return (
     <div className="App">
+
+      <Router>
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/about">About</Link>
+        </nav>
+      </Router>
       <AstroApi />
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/gallery">Gallery</Link>
-        <Link to="/about">About</Link>
-      </nav>
     </div>
   );
 }
