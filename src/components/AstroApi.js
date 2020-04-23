@@ -11,6 +11,11 @@ export default class AstroApi extends Component {
     };
   }
 
+  componentDidMount() {
+    const myKey = "xp8SpsC40TLKmrKrAMuuiSBvVaaWTQh0ulMwA6g9";
+    const endPoint = "https://api.nasa.gov/planetary/apod?api_key=";
+  }
+
   render() {
     return <div></div>;
   }
