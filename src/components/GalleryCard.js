@@ -9,11 +9,7 @@ const GalleryCard = (props) => {
     return (
         <div>
 
-            <a>
-                <img src={arr} alt="" />
-            </a>
-
-
+            <img src={arr} alt="" height="300" width="300" />
 
         </div>
     )
