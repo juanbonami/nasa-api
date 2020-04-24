@@ -24,7 +24,7 @@ export default class AstroApi extends Component {
           astronomy: response.data
 
         })
-        console.log(this.state.astronomy);
+        console.log(response.data);
       })
       .catch((error) => {
         console.log(error, "Failed to fetch data");

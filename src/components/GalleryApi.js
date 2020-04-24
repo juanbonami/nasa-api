@@ -24,7 +24,7 @@ export default class GalleryApi extends Component {
                 return axios.get(imageCollection)
             })
             .then(resp => {
-                console.log(resp.data[2])
+                console.log(resp)
                 this.setState({
                     gallery: resp.data[2]
                 })
@@ -37,9 +37,8 @@ export default class GalleryApi extends Component {
     render() {
         const { gallery } = this.state;
         return (
-            <div>
-                <GalleryCard data={gallery} />
-            </div>
+            <GalleryCard data={gallery} />
+
         )
     }
 }
