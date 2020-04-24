@@ -21,22 +21,27 @@ export default class GalleryApi extends Component {
             .then(response => {
                 console.log(response)
                 let items = response.data.collection.items;
-                let imageCollection;
+                let imageCollection = [];
                 for (let i = 0; i < items.length; i++) {
-                    imageCollection = response.data.collection.items[i].href
-                    console.log(i)
-                    return axios.get(imageCollection)
-                }
+                    imageCollection.push(response.data.collection.items[i].href)
+                    // console.log(i)
 
+                }
+                console.log(imageCollection)
+                // return axios.get(imageCollection)
+                this.setState({
+                    gallery: imageCollection
+                })
                 console.log(imageCollection)
 
+
             })
-            .then(resp => {
-                console.log(resp)
-                this.setState({
-                    gallery: resp.data[2]
-                })
-            })
+            // .then(resp => {
+            //     console.log(resp)
+            //     this.setState({
+            //         gallery: resp.data[2]
+            //     })
+            // })
             .catch(error => {
                 console.log(error, 'Failed to fetch data')
             })
