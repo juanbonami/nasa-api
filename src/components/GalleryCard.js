@@ -1,13 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 const GalleryCard = (props) => {
 
-    const { arr } = props.data;
+    let { arr } = props.data;
+    console.log(props.data)
 
 
     return (
         <div>
-            <img src={arr} />
+            <img src={arr} alt="" />
+            <p>{arr}</p>
         </div>
     )
 }

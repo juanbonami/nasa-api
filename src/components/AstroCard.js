@@ -4,6 +4,7 @@ const AstroCard = (props) => {
 
 
   const { title, url, hdurl, explanation, date, copyright } = props.data;
+  console.log(hdurl)
 
   return (
     <div>
