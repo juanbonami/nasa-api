@@ -20,8 +20,16 @@ export default class GalleryApi extends Component {
         axios.get(api)
             .then(response => {
                 console.log(response)
-                const imageCollection = response.data.collection.items[0].href
-                return axios.get(imageCollection)
+                let items = response.data.collection.items;
+                let imageCollection;
+                for (let i = 0; i < items.length; i++) {
+                    imageCollection = response.data.collection.items[i].href
+                    console.log(i)
+                    return axios.get(imageCollection)
+                }
+
+                console.log(imageCollection)
+
             })
             .then(resp => {
                 console.log(resp)
