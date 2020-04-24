@@ -38,7 +38,7 @@ export default class GalleryApi extends Component {
 
                 // return axios.get(imageCollection)
                 this.setState({
-                    gallery: imageCollection
+                    gallery: hi
                 })
                 // console.log(imageCollection)
 
