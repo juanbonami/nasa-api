@@ -23,7 +23,6 @@ export default class GalleryApi extends Component {
                 let items = response.data.collection.items;
                 let imageCollection = [];
                 let hi = [];
-                let bye = [];
                 for (let i = 0; i < items.length; i++) {
                     imageCollection.push(response.data.collection.items[i].href)
                     axios.get(imageCollection[i])
