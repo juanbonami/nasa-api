@@ -42,6 +42,7 @@ export default class GalleryApi extends Component {
 
                     gallery: hi,
                     date: items[0].data[0].date_created,
+                    description: items[0].data[0].description,
 
 
                 })
