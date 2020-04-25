@@ -41,6 +41,7 @@ export default class GalleryApi extends Component {
                 this.setState({
 
                     gallery: hi,
+                    date: items[0].data[0].date_created,
 
 
                 })
