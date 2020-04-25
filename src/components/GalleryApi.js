@@ -83,7 +83,7 @@ export default class GalleryApi extends Component {
                 <h5> {this.state.date} </h5>
                 <p> {this.state.description} </p>
                 <h5> {this.state.location} </h5>
-
+                <h5> 📷: {this.state.photographer} </h5>
             </div >
 
         )
