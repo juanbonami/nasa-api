@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import GalleryCard from './GalleryCard';
 
 
 export default class GalleryApi extends Component {
@@ -9,7 +8,9 @@ export default class GalleryApi extends Component {
 
         this.state = {
 
-            gallery: []
+            gallery: [],
+            date: '',
+
 
         }
     }
@@ -31,33 +32,33 @@ export default class GalleryApi extends Component {
                         })
 
                 }
-                // console.log(imageCollection)
-
+                console.log(items[0].data[0].title)
                 console.log(hi)
 
-                // return axios.get(imageCollection)
                 this.setState({
-                    gallery: hi
+
+                    gallery: hi,
+
+
                 })
-                // console.log(imageCollection)
 
 
             })
-            // .then(resp => {
-            //     console.log(resp)
-            //     this.setState({
-            //         gallery: resp.data[2]
-            //     })
-            // })
             .catch(error => {
                 console.log(error, 'Failed to fetch data')
             })
+
+
     }
 
     render() {
-        const { gallery } = this.state;
+        // const { gallery } = this.state;
         return (
-            <GalleryCard data={gallery} />
+            // <GalleryCard data={gallery} />
+            <div>
+                <img src={this.state.gallery[0]} height="200" width="200"></img>
+
+            </div >
 
         )
     }
