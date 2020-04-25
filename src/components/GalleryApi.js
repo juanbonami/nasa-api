@@ -45,7 +45,7 @@ export default class GalleryApi extends Component {
                     description: items[0].data[0].description,
                     location: items[0].data[0].location,
                     photographer: items[0].data[0].photographer,
-
+                    title: items[0].data[0].title
 
                 })
 
