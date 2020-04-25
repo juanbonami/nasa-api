@@ -67,6 +67,7 @@ export default class GalleryApi extends Component {
                 <img src={this.state.gallery[1]} height="200" width="200"></img>
                 <img src={this.state.gallery[2]} height="200" width="200"></img>
                 <img src={this.state.gallery[3]} height="200" width="200"></img>
+                <img src={this.state.gallery[4]} height="200" width="200"></img>
 
 
 
