@@ -64,6 +64,9 @@ export default class GalleryApi extends Component {
             // <GalleryCard data={gallery} />
             <div>
                 <img src={this.state.gallery[0]} height="200" width="200"></img>
+                <img src={this.state.gallery[1]} height="200" width="200"></img>
+
+
 
             </div >
 
