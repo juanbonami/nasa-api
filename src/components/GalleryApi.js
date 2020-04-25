@@ -12,6 +12,7 @@ export default class GalleryApi extends Component {
             date: '',
             description: '',
             location: '',
+            photographer: '',
 
 
         }
