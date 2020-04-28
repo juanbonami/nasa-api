@@ -14,10 +14,10 @@ const AstroCard = (props) => {
       <h6>{title}</h6>
 
       <a href={hdurl}>
-        {/* <img src={url} alt={title} /> */}
-        <iframe width="420" height="315"
+        <img src={url} alt={title} />
+        {/* <iframe width="420" height="315"
           src={url} alt={title}>
-        </iframe>
+        </iframe> */}
       </a>
 
       <p>{explanation}</p>

@@ -5,9 +5,7 @@ const GalleryCard = (props) => {
     let arr = props.data;
     // console.log(props.data)
 
-    handleChange(event) {
 
-    }
 
 
 
