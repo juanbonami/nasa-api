@@ -9,7 +9,6 @@ import "./App.css";
 import AstroApi from "./components/AstroApi";
 import About from "./components/About";
 import GalleryApi from "./components/GalleryApi";
-import GalleryCard from "./components/GalleryCard";
 
 function App() {
   return (
