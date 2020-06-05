@@ -9,81 +9,65 @@ export default class GalleryApi extends Component {
         this.state = {
 
             gallery: [],
-            date: '',
-            description: '',
-            location: '',
-            photographer: '',
-            title: ''
+            userInput: ''
 
         }
     }
 
-    componentDidMount() {
-        const api = 'https://images-api.nasa.gov/search?q=mars';
 
-        axios.get(api)
-            .then(response => {
-                console.log(response)
-                let items = response.data.collection.items;
-                let imageCollection = [];
-                let hi = [];
-                for (let i = 0; i < items.length; i++) {
-                    imageCollection.push(response.data.collection.items[i].href)
-                    axios.get(imageCollection[i])
-                        .then(res => {
-                            hi.push(res.data[2])
-                        })
+    changeHandler = (e) => {
 
-                }
-                console.log(items[0].data[0].title)
-                console.log(hi)
-
-                this.setState({
-
-                    gallery: hi,
-                    date: items[0].data[0].date_created,
-                    description: items[0].data[0].description,
-                    location: items[0].data[0].location,
-                    photographer: items[0].data[0].photographer,
-                    title: items[0].data[0].title
-
-                })
-
-
-            })
-            .catch(error => {
-                console.log(error, 'Failed to fetch data')
-            })
-
+        this.setState({
+            userInput: e.target.value
+        })
 
     }
+
+
+
+    submitHandler = (e) => {
+
+        e.preventDefault()
+
+        axios.get(`https://images-api.nasa.gov/search?q=${this.state.userInput}`)
+            .then(Response => {
+                console.log(Response.data.collection.items)
+
+                this.setState({
+                    gallery: Response.data.collection.items
+                })
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
+
+
 
     render() {
         // const { gallery } = this.state;
         return (
             // <GalleryCard data={gallery} />
             <div>
-                <img src={this.state.gallery[0]} height="200" width="200"></img>
-                <img src={this.state.gallery[1]} height="200" width="200"></img>
-                <img src={this.state.gallery[2]} height="200" width="200"></img>
-                <img src={this.state.gallery[3]} height="200" width="200"></img>
-                <img src={this.state.gallery[4]} height="200" width="200"></img>
-                <img src={this.state.gallery[5]} height="200" width="200"></img>
-                <img src={this.state.gallery[6]} height="200" width="200"></img>
-                <img src={this.state.gallery[7]} height="200" width="200"></img>
-                <img src={this.state.gallery[8]} height="200" width="200"></img>
-                <img src={this.state.gallery[9]} height="200" width="200"></img>
-                <img src={this.state.gallery[10]} height="200" width="200"></img>
-                <img src={this.state.gallery[11]} height="200" width="200"></img>
-                <img src={this.state.gallery[12]} height="200" width="200"></img>
-                <img src={this.state.gallery[13]} height="200" width="200"></img>
-                <img src={this.state.gallery[14]} height="200" width="200"></img>
+                <form onSubmit={this.submitHandler} >
+                    <div>
+                        <p>Search</p>
+                        <input type="text" name="name" placeholder="ex: earth, rover, jupiter" value={this.userInput} onChange={this.changeHandler} />
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
 
-                <h5> {this.state.title} </h5>
-                <h5> {this.state.date} </h5>
-                <p> {this.state.description} </p>
-                <h5> {this.state.location} </h5>
-                <h5> 📷: {this.state.photographer} </h5>
+                {this.state.gallery.map((iterate) => {
+
+                    return (
+                        <div>
+                            <img src={iterate.links[0].href} height="300" width="300"></img>
+                            <h1> {iterate.data[0].description} </h1>
+                        </div>
+                    )
+                })}
+
             </div >
 
         )
