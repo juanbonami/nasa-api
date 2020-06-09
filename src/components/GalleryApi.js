@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Segment, Input } from 'semantic-ui-react'
 import { Button } from 'semantic-ui-react'
+import { Grid, Image } from 'semantic-ui-react'
 
 
 export default class GalleryApi extends Component {
@@ -52,11 +53,7 @@ export default class GalleryApi extends Component {
             // <GalleryCard data={gallery} />
             <div>
                 <form onSubmit={this.submitHandler} >
-                    {/* <div>
-                        <p>Search</p>
-                        <input type="text" name="name" placeholder="ex: earth, rover, jupiter" value={this.userInput} onChange={this.changeHandler} />
-                    </div>
-                    <button type="submit">Submit</button> */}
+
                     <Segment inverted>
                         <Input type="text" name="name" value={this.userInput} onChange={this.changeHandler} inverted placeholder='Search...' />
                         <Button type="submit" primary>Search</Button>
@@ -70,8 +67,18 @@ export default class GalleryApi extends Component {
 
                     return (
                         <div>
-                            <img src={iterate.links[0].href} height="300" width="300"></img>
-                            <h1> {iterate.data[0].description} </h1>
+                            {/* <img src={iterate.links[0].href} height="300" width="300"></img>
+                            <h1> {iterate.data[0].description} </h1> */}
+                            <Grid celled>
+                                <Grid.Row>
+                                    <Grid.Column width={3}>
+                                        <Image src={iterate.links[0].href} />
+                                    </Grid.Column>
+                                    <Grid.Column width={13}>
+                                        <p> {iterate.data[0].description} </p>
+                                    </Grid.Column>
+                                </Grid.Row>
+                            </Grid>
                         </div>
                     )
                 })}

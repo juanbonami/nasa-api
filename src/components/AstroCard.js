@@ -14,16 +14,19 @@ const AstroCard = (props) => {
 
       <h6>{title}</h6>
 
-      <Grid>
+      <Grid style={{
+        paddingLeft: 130
+      }}>
         <Grid.Column width={5}>
           <Image src={hdurl} alt={title} />
+          <span>{date}, {copyright}</span>
         </Grid.Column>
         <Grid.Column width={9}>
           <p>{explanation}</p>
         </Grid.Column>
       </Grid>
 
-      <span>{date}, {copyright}</span>
+
 
     </div>
   )
