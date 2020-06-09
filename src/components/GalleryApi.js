@@ -31,7 +31,6 @@ export default class GalleryApi extends Component {
 
         axios.get(`https://images-api.nasa.gov/search?q=${this.state.userInput}`)
             .then(Response => {
-                console.log(Response.data.collection.items)
 
                 this.setState({
                     gallery: Response.data.collection.items

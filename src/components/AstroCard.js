@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid, Image } from 'semantic-ui-react'
 
 const AstroCard = (props) => {
 
@@ -13,16 +14,25 @@ const AstroCard = (props) => {
 
       <h6>{title}</h6>
 
-      <a href={hdurl}>
+      {/* <a href={hdurl}> */}
 
-        {/* Here the the api displays a different image daily, and here's where the componentDidMount() method really shines bcs it updates any new information into the DOM. */}
-        <img src={url} alt={title} />
-        {/* <iframe width="420" height="315"
+      {/* Here the the api displays a different image daily, and here's where the componentDidMount() method really shines bcs it updates any new information into the DOM. */}
+      {/* <img src={url} alt={title} /> */}
+      {/* <iframe width="420" height="315"
           src={url} alt={title}>
         </iframe> */}
-      </a>
+      {/* </a> */}
 
-      <p>{explanation}</p>
+      <Grid>
+        <Grid.Column width={4}>
+          <Image src={url} alt={title} />
+        </Grid.Column>
+        <Grid.Column width={9}>
+          <p>{explanation}</p>
+        </Grid.Column>
+      </Grid>
+
+
 
       <span>{date}, {copyright}</span>
 
