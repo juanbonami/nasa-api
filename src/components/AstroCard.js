@@ -24,8 +24,8 @@ const AstroCard = (props) => {
       {/* </a> */}
 
       <Grid>
-        <Grid.Column width={4}>
-          <Image src={url} alt={title} />
+        <Grid.Column width={5}>
+          <Image src={hdurl} alt={title} />
         </Grid.Column>
         <Grid.Column width={9}>
           <p>{explanation}</p>
