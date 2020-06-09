@@ -14,11 +14,11 @@ const GalleryCard = (props) => {
         <div>
 
 
-            <form>
+            {/* <form>
 
                 <input type="text" name="search" placeholder="search" onChange={this.handleChange} />
                 <button>Search</button>
-            </form>
+            </form> */}
 
         </div>
     )
