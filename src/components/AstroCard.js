@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Image } from 'semantic-ui-react'
+import { Grid, Image, Segment } from 'semantic-ui-react'
 
 const AstroCard = (props) => {
 
@@ -8,7 +8,7 @@ const AstroCard = (props) => {
   console.log(props.data)
 
   return (
-    <div>
+    <Segment inverted>
 
       <h3>Astronomy Photo of The Day</h3>
 
@@ -28,7 +28,7 @@ const AstroCard = (props) => {
 
 
 
-    </div>
+    </Segment>
   )
 };
 

@@ -11,7 +11,7 @@ import About from './About';
 import GalleryApi from './GalleryApi';
 
 export default class GalleryCard extends Component {
-    state = { activeItem: 'home' }
+    state = { activeItem: 'Home' }
 
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
@@ -21,36 +21,31 @@ export default class GalleryCard extends Component {
         return (
             <Segment inverted>
                 <Menu inverted pointing secondary>
+                    {/* <Router> */}
+
                     <Menu.Item
                         name='Home'
                         active={activeItem === 'Home'}
                         onClick={this.handleItemClick}
-
+                        as={Link}
+                        to='/'
                     />
+
                     <Menu.Item
                         name='Gallery'
                         active={activeItem === 'Gallery'}
                         onClick={this.handleItemClick}
+                        as={Link}
+                        to='/gallery'
                     />
                     <Menu.Item
                         name='About'
                         active={activeItem === 'About'}
                         onClick={this.handleItemClick}
+                        as={Link}
+                        to='/about'
                     />
 
-                    <Router>
-                        <nav>
-                            <Link to="/">Home</Link>
-                            <Link to="/gallery">Gallery</Link>
-                            <Link to="/about">About</Link>
-                        </nav>
-
-                        <Switch>
-                            <Route path="/gallery" component={GalleryApi} />
-                            <Route path="/about" component={About} />
-                            <Route path="/" component={AstroApi} />
-                        </Switch>
-                    </Router>
                 </Menu>
             </Segment>
         )

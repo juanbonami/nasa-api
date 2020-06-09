@@ -14,7 +14,7 @@ export default class Navbar extends Component {
     render() {
         return (
             <div>
-                <Segment inverted>
+                {/* <Segment inverted>
                     <Router>
                         <nav>
                             <Link to="/">Home</Link>
@@ -28,7 +28,7 @@ export default class Navbar extends Component {
                             <Route path="/" component={AstroApi} />
                         </Switch>
                     </Router>
-                </Segment>
+                </Segment> */}
 
             </div>
         )

@@ -51,7 +51,7 @@ export default class GalleryApi extends Component {
         // const { gallery } = this.state;
         return (
             // <GalleryCard data={gallery} />
-            <div>
+            <Segment inverted>
                 <form onSubmit={this.submitHandler} >
 
                     <Segment inverted>
@@ -69,12 +69,12 @@ export default class GalleryApi extends Component {
                         <div>
                             {/* <img src={iterate.links[0].href} height="300" width="300"></img>
                             <h1> {iterate.data[0].description} </h1> */}
-                            <Grid>
-                                <Grid.Row>
-                                    <Grid.Column width={4}>
+                            <Grid celled>
+                                <Grid.Row style={{ paddingLeft: 100 }}>
+                                    <Grid.Column width={5}>
                                         <Image src={iterate.links[0].href} />
                                     </Grid.Column>
-                                    <Grid.Column width={13}>
+                                    <Grid.Column width={10}>
                                         <p> {iterate.data[0].description} </p>
                                     </Grid.Column>
                                 </Grid.Row>
@@ -83,7 +83,7 @@ export default class GalleryApi extends Component {
                     )
                 })}
 
-            </div >
+            </Segment >
 
         )
     }
