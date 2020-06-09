@@ -69,9 +69,9 @@ export default class GalleryApi extends Component {
                         <div>
                             {/* <img src={iterate.links[0].href} height="300" width="300"></img>
                             <h1> {iterate.data[0].description} </h1> */}
-                            <Grid celled>
+                            <Grid>
                                 <Grid.Row>
-                                    <Grid.Column width={3}>
+                                    <Grid.Column width={4}>
                                         <Image src={iterate.links[0].href} />
                                     </Grid.Column>
                                     <Grid.Column width={13}>
