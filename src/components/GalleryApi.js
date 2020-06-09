@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Segment, Input } from 'semantic-ui-react'
 
 
 export default class GalleryApi extends Component {
@@ -56,6 +57,10 @@ export default class GalleryApi extends Component {
                     </div>
                     <button type="submit">Submit</button>
                 </form>
+
+                <Segment inverted>
+                    <Input type="text" name="name" value={this.userInput} onChange={this.changeHandler} inverted placeholder='Search...' />
+                </Segment>
 
                 {this.state.gallery.map((iterate) => {
 
