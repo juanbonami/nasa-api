@@ -12,7 +12,20 @@ export default class IssTracker extends Component {
     }
 
 
+    componentDidMount() {
 
+        axios.get('http://api.open-notify.org/iss-now.json')
+            .then(Response => {
+                console.log(Response.data.iss_position.latitude)
+                this.setState({
+                    info: Response.data
+                })
+            })
+            .catch(error => {
+                console.log(error)
+            })
+
+    }
 
 
 
