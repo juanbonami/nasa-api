@@ -18,8 +18,10 @@ export default class IssTracker extends Component {
             .then(Response => {
                 console.log(Response.data.iss_position.latitude)
                 this.setState({
+
                     latitude: Response.data.iss_position.latitude,
                     longitude: Response.data.iss_position.longitude
+
                 })
             })
             .catch(error => {
@@ -34,7 +36,8 @@ export default class IssTracker extends Component {
     render() {
         return (
             <div>
-
+                <p> {this.state.latitude} </p>
+                <p> {this.state.longitude} </p>
             </div>
         )
     }
