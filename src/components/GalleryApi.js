@@ -46,7 +46,6 @@ export default class GalleryApi extends Component {
 
 
 
-
     render() {
         // const { gallery } = this.state;
         return (
