@@ -11,6 +11,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import IssTracker from "./components/IssTracker";
 
 function App() {
   return (
@@ -23,9 +24,8 @@ function App() {
         <Route exact path="/gallery" component={GalleryApi} />
         <Route exact path="/about" component={About} />
         <Route exact path="/" component={AstroApi} />
-
       </Router>
-
+      <IssTracker />
     </div>
   );
 }

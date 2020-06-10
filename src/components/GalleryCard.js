@@ -21,7 +21,6 @@ export default class GalleryCard extends Component {
         return (
             <Segment inverted>
                 <Menu inverted pointing secondary>
-                    {/* <Router> */}
 
                     <Menu.Item
                         name='Home'
