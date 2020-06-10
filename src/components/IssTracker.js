@@ -14,19 +14,22 @@ export default class IssTracker extends Component {
 
     componentDidMount() {
 
-        axios.get('http://api.open-notify.org/iss-now.json')
-            .then(Response => {
-                console.log(Response.data.iss_position.latitude)
-                this.setState({
+        setInterval(() => {
+            axios.get('http://api.open-notify.org/iss-now.json')
+                .then(Response => {
+                    console.log(Response.data.iss_position.latitude)
+                    this.setState({
 
-                    latitude: Response.data.iss_position.latitude,
-                    longitude: Response.data.iss_position.longitude
+                        latitude: Response.data.iss_position.latitude,
+                        longitude: Response.data.iss_position.longitude
 
+                    })
                 })
-            })
-            .catch(error => {
-                console.log(error)
-            })
+                .catch(error => {
+                    console.log(error)
+                })
+        }, 1000)
+
 
     }
 
@@ -36,7 +39,7 @@ export default class IssTracker extends Component {
     render() {
         return (
             <div>
-                <p> The ISS is currently over {this.state.latitude}° N, {this.state.longitude}°E </p>
+                <p> The ISS is currently {this.state.latitude}° N, {this.state.longitude}°E </p>
             </div>
         )
     }
