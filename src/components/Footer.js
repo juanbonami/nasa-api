@@ -7,19 +7,18 @@ export default class Footer extends Component {
                 <div className="container-footer">
                     <div className="row">
                         <div className="col-md-3 col-sm-6">
-                            <h5>Lorem ipsum</h5>
+                            <h5>Contact</h5>
                             <ul className="list-unstyled">
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
+                                <li>juanbonami@gmail.com</li>
+                                <li><a href="https://github.com/juanbonami"> Github </a></li>
+                                <li><a href="https://www.linkedin.com/in/juan-bonami-261909128/">LinkedIn</a></li>
                             </ul>
                         </div>
 
                         <div className="col-md-3 col-sm-6">
-                            <h4>Lorem ipsum</h4>
+                            <h4>Services</h4>
                             <ul className="list-unstyled">
-                                <li>Lorem ipsum</li>
+                                <li><a href="https://api.nasa.gov/">NASA Astronomy Picture of The Day</a></li>
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>

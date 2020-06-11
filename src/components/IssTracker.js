@@ -39,7 +39,7 @@ export default class IssTracker extends Component {
     render() {
         return (
             <div>
-                <p> The ISS is currently {this.state.latitude}° N, {this.state.longitude}°E </p>
+                <p> <b>The ISS is currently:</b> <b>{this.state.latitude}° N,</b> <b>{this.state.longitude}°E</b>  </p>
             </div>
         )
     }
