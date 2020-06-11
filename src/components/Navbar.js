@@ -11,7 +11,8 @@ export default class Navbar extends Component {
         const { activeItem } = this.state
 
         return (
-            <Segment inverted>
+            <div>
+              <Segment inverted>
                 <Menu inverted pointing secondary>
 
                     <Menu.Item
@@ -38,7 +39,9 @@ export default class Navbar extends Component {
                     />
 
                 </Menu>
-            </Segment>
+            </Segment>  
+            </div>
+            
         )
     }
 }

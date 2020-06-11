@@ -10,20 +10,24 @@ import {
 } from "react-router-dom";
 import IssTracker from "./components/IssTracker";
 import Footer from "./components/Footer";
+import ImageBody from "./components/ImageBody";
 
 function App() {
   return (
     <div className="App">
       {/* <Navbar /> */}
 
-
+      
       <Router>
+        
         <Navbar />
         <IssTracker />
+        <ImageBody/>
         <Route exact path="/gallery" component={GalleryApi} />
         <Route exact path="/about" component={About} />
         <Route exact path="/" component={AstroApi} />
       </Router>
+      <ImageBody/>
       <Footer />
 
     </div>

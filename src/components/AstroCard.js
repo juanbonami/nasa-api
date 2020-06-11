@@ -8,7 +8,8 @@ const AstroCard = (props) => {
   console.log(props.data)
 
   return (
-    <Segment inverted>
+    <div> 
+      <Segment inverted>
 
       <h3>Astronomy Photo of The Day</h3>
 
@@ -29,6 +30,8 @@ const AstroCard = (props) => {
 
 
     </Segment>
+    </div>
+    
   )
 };
 

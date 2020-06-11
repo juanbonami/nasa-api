@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Segment, Input } from 'semantic-ui-react'
 import { Button } from 'semantic-ui-react'
 import { Grid, Image } from 'semantic-ui-react'
+import logo from '../giphy/giphy.gif'
 
 
 export default class GalleryApi extends Component {
@@ -51,7 +52,8 @@ export default class GalleryApi extends Component {
         // const { gallery } = this.state;
         return (
             // <GalleryCard data={gallery} />
-            <Segment inverted>
+            <div>
+              <Segment inverted>
                 <form onSubmit={this.submitHandler} >
 
                     <Segment inverted>
@@ -60,7 +62,6 @@ export default class GalleryApi extends Component {
                     </Segment>
 
                 </form>
-
 
 
                 {this.state.gallery.map((iterate) => {
@@ -83,7 +84,9 @@ export default class GalleryApi extends Component {
                     )
                 })}
 
-            </Segment >
+            </Segment >  
+            </div>
+            
 
         )
     }

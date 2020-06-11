@@ -7,7 +7,7 @@ export default class Footer extends Component {
                 <div className="container-footer">
                     <div className="row">
                         <div className="col-md-3 col-sm-6">
-                            <h5>Contact</h5>
+                            <h4>Contact</h4>
                             <ul className="list-unstyled">
                                 <li>juanbonami@gmail.com</li>
                                 <li><a href="https://github.com/juanbonami"> Github </a></li>
@@ -19,7 +19,7 @@ export default class Footer extends Component {
                             <h4>Services</h4>
                             <ul className="list-unstyled">
                                 <li><a href="https://api.nasa.gov/">NASA Astronomy Picture of The Day</a></li>
-                                <li>Lorem ipsum</li>
+                                <li><a href="http://open-notify.org/Open-Notify-API/ISS-Location-Now/">ISS Tracker</a></li>
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
                             </ul>

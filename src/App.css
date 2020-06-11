@@ -8,3 +8,20 @@
   padding-top: 7%;
   padding-bottom: 3%;
 }
+
+.about-color {
+  background-color: rgb(27, 28, 29);
+  color: #ddd;
+}
+
+.space-giphy {
+
+  background-image: url("https://media.giphy.com/media/3og0INtldac8gncQO4/giphy.gif");
+    display:block;
+    background-size: cover;
+    height:100%;
+    width:100%;
+    color: #ddd;
+/* https://alphauniverseglobal.media.zestyio.com/Alpha-Universe-Rachel-Ross-Jones-lady-boot-arch2.jpg */
+  
+}

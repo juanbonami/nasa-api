@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import { Segment } from 'semantic-ui-react';
 
 export default class IssTracker extends Component {
     constructor(props) {
@@ -39,7 +40,10 @@ export default class IssTracker extends Component {
     render() {
         return (
             <div>
-                <p> <b>The ISS is currently:</b> <b>{this.state.latitude}° N,</b> <b>{this.state.longitude}°E</b>  </p>
+                <Segment inverted>
+                  <p> <b>The ISS is currently:</b> <b>{this.state.latitude}° N,</b> <b>{this.state.longitude}°E</b>  </p>  
+                </Segment>
+                
             </div>
         )
     }
