@@ -21,11 +21,13 @@ function App() {
 
       <Router>
         <GalleryCard />
+        <IssTracker />
         <Route exact path="/gallery" component={GalleryApi} />
         <Route exact path="/about" component={About} />
         <Route exact path="/" component={AstroApi} />
+
       </Router>
-      <IssTracker />
+
     </div>
   );
 }
