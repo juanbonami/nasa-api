@@ -12,6 +12,8 @@
 .about-color {
   background-color: rgb(27, 28, 29);
   color: #ddd;
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 
 .iss-color {
