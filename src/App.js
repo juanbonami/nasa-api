@@ -11,6 +11,7 @@ import {
 import IssTracker from "./components/IssTracker";
 import Footer from "./components/Footer";
 import ImageBody from "./components/ImageBody";
+import ImageBodyTwo from "./components/ImageBodyTwo";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/" component={AstroApi} />
       </Router>
-      <ImageBody/>
+      <ImageBodyTwo/>
       <Footer />
 
     </div>
