@@ -5,7 +5,15 @@ export default class Footer extends Component {
         return (
             <div className="main-footer">
                 <div className="container-footer">
+                    <div className="row">
+                        
+
+                        
+
+                        
+
                     
+                    </div>
                     {/* ****** */}
                     <br />
                         
