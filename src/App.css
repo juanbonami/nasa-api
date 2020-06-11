@@ -32,8 +32,8 @@
 .astro-color {
   background-color: rgb(27, 28, 29);
   color: #ddd;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .gallery-color {
@@ -51,6 +51,8 @@
     height:100%;
     width:100%;
     color: #ddd;
+    padding-top: 80px;
+    padding-bottom: 80px;
 /* https://alphauniverseglobal.media.zestyio.com/Alpha-Universe-Rachel-Ross-Jones-lady-boot-arch2.jpg */
   
 }
