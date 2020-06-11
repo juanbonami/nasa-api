@@ -52,14 +52,14 @@ export default class GalleryApi extends Component {
         // const { gallery } = this.state;
         return (
             // <GalleryCard data={gallery} />
-            <div>
-              <Segment inverted>
+            <div className="gallery-color">
+              
                 <form onSubmit={this.submitHandler} >
 
-                    <Segment inverted>
+                   
                         <Input type="text" name="name" value={this.userInput} onChange={this.changeHandler} inverted placeholder='Search...' />
                         <Button type="submit" primary>Search</Button>
-                    </Segment>
+                    
 
                 </form>
 
@@ -84,7 +84,7 @@ export default class GalleryApi extends Component {
                     )
                 })}
 
-            </Segment >  
+             
             </div>
             
 

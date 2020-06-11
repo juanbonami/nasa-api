@@ -23,6 +23,11 @@
   background-color: rgb(27, 28, 29);
 }
 
+.astro-color {
+  background-color: rgb(27, 28, 29);
+  color: #ddd;
+}
+
 .space-giphy {
 
   background-image: url("https://media.giphy.com/media/3og0INtldac8gncQO4/giphy.gif");
