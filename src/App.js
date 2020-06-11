@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import GalleryCard from "./components/GalleryCard";
+import Navbar from "./components/Navbar";
 import AstroApi from './components/AstroApi';
 import About from './components/About';
 import GalleryApi from './components/GalleryApi';
@@ -17,7 +17,7 @@ function App() {
 
 
       <Router>
-        <GalleryCard />
+        <Navbar />
         <IssTracker />
         <Route exact path="/gallery" component={GalleryApi} />
         <Route exact path="/about" component={About} />
