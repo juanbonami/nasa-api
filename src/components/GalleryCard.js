@@ -1,14 +1,6 @@
 import React, { Component } from 'react'
 import { Menu, Segment } from 'semantic-ui-react'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
-import AstroApi from './AstroApi';
-import About from './About';
-import GalleryApi from './GalleryApi';
+import { Link } from "react-router-dom";
 
 export default class GalleryCard extends Component {
     state = { activeItem: 'Home' }
