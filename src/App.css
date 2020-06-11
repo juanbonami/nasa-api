@@ -17,6 +17,8 @@
 .iss-color {
   background-color: rgb(27, 28, 29);
   color: #ddd;
+  padding-top: 20px;
+  padding-bottom: 35px;
 }
 
 .nav-color {
