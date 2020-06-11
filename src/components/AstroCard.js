@@ -4,7 +4,7 @@ import { Grid, Image, Segment } from 'semantic-ui-react'
 const AstroCard = (props) => {
 
 
-  const { title, url, hdurl, explanation, date, copyright } = props.data;
+  const { title, hdurl, explanation, date, copyright } = props.data;
   console.log(props.data)
 
   return (
@@ -19,7 +19,7 @@ const AstroCard = (props) => {
       }}>
         <Grid.Column width={5}>
           <Image src={hdurl} alt={title} />
-          <span>{date}, {copyright}</span>
+          <span>{date} {copyright}</span>
         </Grid.Column>
         <Grid.Column width={9}>
           <p>{explanation}</p>
