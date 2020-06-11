@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import IssTracker from "./components/IssTracker";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,8 +23,8 @@ function App() {
         <Route exact path="/gallery" component={GalleryApi} />
         <Route exact path="/about" component={About} />
         <Route exact path="/" component={AstroApi} />
-
       </Router>
+      <Footer />
 
     </div>
   );
