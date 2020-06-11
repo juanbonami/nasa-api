@@ -91,7 +91,11 @@ export default class Footer extends Component {
                     </div>
                         <br />
                         <br />
-                        
+                        <div className="footer-bottom">
+                            <p className="text-xs-center">
+                                &copy;{new Date().getFullYear()} Capstone Project App - All Rights Reserved
+                            </p>   
+                        </div>
                 </div>
             </div>
         )
