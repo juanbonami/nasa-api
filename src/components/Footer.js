@@ -46,7 +46,6 @@ export default class Footer extends Component {
                             </ul>
                         </div>
                     </div>
-                    {/* ****** */}
                     <br />
                     <div className="row">
                         <div className="col-md-3 col-sm-6">
