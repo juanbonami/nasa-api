@@ -39,11 +39,8 @@ export default class IssTracker extends Component {
 
     render() {
         return (
-            <div>
-                <Segment inverted>
+            <div className="iss-color">              
                   <p> <b>The ISS is currently:</b> <b>{this.state.latitude}° N,</b> <b>{this.state.longitude}°E</b>  </p>  
-                </Segment>
-                
             </div>
         )
     }

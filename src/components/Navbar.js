@@ -11,8 +11,8 @@ export default class Navbar extends Component {
         const { activeItem } = this.state
 
         return (
-            <div>
-              <Segment inverted>
+            <div className="nav-color">
+              
                 <Menu inverted pointing secondary>
 
                     <Menu.Item
@@ -39,7 +39,7 @@ export default class Navbar extends Component {
                     />
 
                 </Menu>
-            </Segment>  
+             
             </div>
             
         )
