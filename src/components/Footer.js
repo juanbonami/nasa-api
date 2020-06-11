@@ -17,7 +17,7 @@ export default class Footer extends Component {
                         </div>
 
                         <div className="col-md-3 col-sm-6">
-                            <h5>Lorem ipsum</h5>
+                            <h4>Lorem ipsum</h4>
                             <ul className="list-unstyled">
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
@@ -27,7 +27,7 @@ export default class Footer extends Component {
                         </div>
 
                         <div className="col-md-3 col-sm-6">
-                            <h5>Lorem ipsum</h5>
+                            <h4>Lorem ipsum</h4>
                             <ul className="list-unstyled">
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
@@ -37,7 +37,7 @@ export default class Footer extends Component {
                         </div>
 
                         <div className="col-md-3 col-sm-6">
-                            <h5>Lorem ipsum</h5>
+                            <h4>Lorem ipsum</h4>
                             <ul className="list-unstyled">
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
