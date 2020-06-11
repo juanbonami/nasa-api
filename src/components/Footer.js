@@ -10,9 +10,9 @@ export default class Footer extends Component {
                         <div className="col-md-3 col-sm-6">
                             <h4>Contact</h4>
                             <ul className="list-unstyled">
-                                <li>juanbonami@gmail.com</li>                              
+                                <li> <Icon circular inverted name='mail' /> juanbonami@gmail.com</li>                              
                                 <li> <Icon circular inverted name='github' /> <a href="https://github.com/juanbonami"> Github </a></li>
-                                <li><a href="https://www.linkedin.com/in/juan-bonami-261909128/">LinkedIn</a></li>
+                                <li> <Icon circular inverted name='linkedin' /> <a href="https://www.linkedin.com/in/juan-bonami-261909128/">LinkedIn</a></li>
                             </ul>
                         </div>
 
