@@ -56,11 +56,10 @@ export default class GalleryApi extends Component {
               
                 <form onSubmit={this.submitHandler} >
 
-                   
-                        <Input type="text" name="name" value={this.userInput} onChange={this.changeHandler} inverted placeholder='Search...' />
-                        <Button type="submit" primary>Search</Button>
+                    <h1> Search the NASA Image Library </h1>
+                    <Input type="text" name="name" value={this.userInput} onChange={this.changeHandler} inverted placeholder='Search...' />
+                    <Button type="submit" primary>Search</Button>
                     
-
                 </form>
 
 

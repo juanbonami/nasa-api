@@ -52,7 +52,7 @@ export default class Footer extends Component {
                         <br />
                         <div className="footer-bottom">
                             <p className="text-xs-center">
-                                &copy;{new Date().getFullYear()} NASA-API Project App - All Rights Reserved
+                                &copy;{new Date().getFullYear()} NASA-Project-App - All Rights Reserved
                             </p>   
                         </div>
                 </div>
