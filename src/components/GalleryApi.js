@@ -81,7 +81,7 @@ export default class GalleryApi extends Component {
                 {this.state.gallery.map((iterate) => {
 
                     return (
-                        <div>
+                        <div style={{paddingTop: 80}}>
                             {/* <img src={iterate.links[0].href} height="300" width="300"></img>
                             <h1> {iterate.data[0].description} </h1> */}
                             <Grid celled>
