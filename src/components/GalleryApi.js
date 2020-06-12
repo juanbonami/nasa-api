@@ -61,6 +61,8 @@ export default class GalleryApi extends Component {
                     <Grid columns={2} relaxed='very' stackable>
                         <Grid.Column>
                             <h1> Search the NASA Image Library </h1>
+                            <h5> <u> <Icon circular inverted name='arrow alternate circle down outline' /> search below </u></h5>
+                            <p> ex: spacex </p>
                             <Input type="text" name="name" value={this.userInput} onChange={this.changeHandler} inverted placeholder='Search...' />                          
                         </Grid.Column>
 
