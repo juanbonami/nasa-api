@@ -61,15 +61,13 @@ export default class GalleryApi extends Component {
                     <Grid columns={2} relaxed='very' stackable>
                         <Grid.Column>
                             <h1> Search the NASA Image Library </h1>
-                            <Input type="text" name="name" value={this.userInput} onChange={this.changeHandler} inverted placeholder='Search...' />
-                            
+                            <Input type="text" name="name" value={this.userInput} onChange={this.changeHandler} inverted placeholder='Search...' />                          
                         </Grid.Column>
 
                         <Grid.Column verticalAlign='middle'>
-                            <Button type="submit" primary>Search</Button>
+                            <Button style={{paddingLeft: 80, paddingRight: 80}} type="submit" primary>Search</Button>
                         </Grid.Column>
                     </Grid>
-
                     <Divider vertical inverted> <Icon circular inverted name='search' /> </Divider>
                 </Segment>
 
