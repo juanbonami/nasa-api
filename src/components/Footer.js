@@ -5,8 +5,8 @@ export default class Footer extends Component {
     render() {
         return (
             <div className="main-footer">
-                <div className="container-footer">
-                    <div className="row">
+                <div className="container-footer" >
+                    <div className="row" style={{alignItems: 'center', display: 'flex', justifyContent: 'space-around'}}>
                         <div className="col-md-3 col-sm-6">
                             <h4>Contact</h4>
                             <ul className="list-unstyled">
@@ -27,16 +27,16 @@ export default class Footer extends Component {
                         </div>
 
                         <div className="col-md-3 col-sm-6">
-                            <h4>Lorem ipsum</h4>
+                            <h4>Technologies</h4>
                             <ul className="list-unstyled">
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
+                                <li>Reactjs/JSX</li>
+                                <li>Axios</li>
+                                <li>Bootstarp</li>
+                                <li>Semantic-UI</li>
                             </ul>
                         </div>
 
-                        <div className="col-md-3 col-sm-6">
+                        {/* <div className="col-md-3 col-sm-6">
                             <h4>Lorem ipsum</h4>
                             <ul className="list-unstyled">
                                 <li>Lorem ipsum</li>
@@ -44,7 +44,7 @@ export default class Footer extends Component {
                                 <li>Lorem ipsum</li>
                                 <li>Lorem ipsum</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                     <br />
 
