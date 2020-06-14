@@ -31,7 +31,7 @@ export default class Footer extends Component {
                             <ul className="list-unstyled">
                                 <li>Reactjs/JSX</li>
                                 <li>Axios</li>
-                                <li>Bootstarp</li>
+                                <li>Bootstrap</li>
                                 <li>Semantic-UI</li>
                             </ul>
                         </div>
