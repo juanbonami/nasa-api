@@ -5,6 +5,7 @@ import { Button } from 'semantic-ui-react'
 import { Grid, Image, Divider } from 'semantic-ui-react'
 import { Icon } from 'semantic-ui-react'
 import logo from '../giphy/giphy.gif'
+import ImageBodyTwo from './ImageBodyTwo';
 
 
 export default class GalleryApi extends Component {
@@ -90,8 +91,8 @@ export default class GalleryApi extends Component {
                                         <Image src={iterate.links[0].href} />
                                     </Grid.Column>
                                     <Grid.Column width={10}>
-                                        <p> {iterate.data[0].description} </p>
-                                    </Grid.Column>
+                                        <h2> {iterate.data[0].description} </h2>
+                                    </Grid.Column>                                   
                                 </Grid.Row>
                             </Grid>
                         </div>
