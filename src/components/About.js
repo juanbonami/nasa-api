@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Divider, Segment } from 'semantic-ui-react'
+import { Divider } from 'semantic-ui-react'
 
 export default class About extends Component {
     render() {
@@ -14,7 +14,7 @@ export default class About extends Component {
                     </Divider>
                     <p>The Home section of this webpage will automatically update daily with a new image or video along with it's description and title etc. The Gallery section will provide the user with the option to search the NASA image library.</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>The ISS tracker makes a get request using a diffrent API and we use the longitude and latitude from the response we get after we make the request. Then we use that information and set an interval of 1 second. The data gets updated every second for the user.</p>
                  
             </div>
                 
