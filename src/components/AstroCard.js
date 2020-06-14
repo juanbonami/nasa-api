@@ -20,7 +20,8 @@ const AstroCard = (props) => {
         <Grid.Column width={5}>
           
           {/* <Image src={hdurl} alt={title} /> */}
-          <iframe src={url}> {title} </iframe>
+          {title}
+          <iframe src={url} style={{border: 'none'}} height="300" width="500">  </iframe>
           <br/>
           <span>{date} {copyright}</span>
         </Grid.Column>
