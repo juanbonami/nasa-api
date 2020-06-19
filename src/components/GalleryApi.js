@@ -6,6 +6,7 @@ import { Grid, Image, Divider } from 'semantic-ui-react'
 import { Icon } from 'semantic-ui-react'
 
 
+
 export default class GalleryApi extends Component {
     constructor(props) {
         super(props)
@@ -13,8 +14,7 @@ export default class GalleryApi extends Component {
         this.state = {
 
             gallery: [],
-            userInput: '',
-            status: null
+            userInput: ''
 
         }
         this.changeHandler = this.changeHandler.bind(this);
@@ -79,7 +79,6 @@ export default class GalleryApi extends Component {
 
                 </form>
 
-                
                 {this.state.gallery.map((iterate) => {
 
                     return (
