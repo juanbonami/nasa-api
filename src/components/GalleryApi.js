@@ -40,7 +40,8 @@ export default class GalleryApi extends Component {
             .then(Response => {
                 console.log(Response);
                 this.setState({
-                    gallery: Response.data.collection.items
+                    gallery: Response.data.collection.items,
+                    status: Response.status
                 })
             })
             .catch(error => {
