@@ -13,7 +13,8 @@ export default class GalleryApi extends Component {
         this.state = {
 
             gallery: [],
-            userInput: ''
+            userInput: '',
+            status: ''
 
         }
         this.changeHandler = this.changeHandler.bind(this);
@@ -37,7 +38,7 @@ export default class GalleryApi extends Component {
 
         axios.get(`https://images-api.nasa.gov/search?q=${this.state.userInput}`)
             .then(Response => {
-                console.log(Response.status);
+                console.log(Response);
                 this.setState({
                     gallery: Response.data.collection.items
                 })
@@ -51,9 +52,9 @@ export default class GalleryApi extends Component {
 
 
     render() {
-         
-        // const { gallery } = this.state;
-        return (
+         if (this.state.status === 'status') {
+
+            return (
             // <GalleryCard data={gallery} />
             <div className="gallery-color">
               
@@ -105,5 +106,12 @@ export default class GalleryApi extends Component {
             
 
         )
+        } else {
+            return (
+                <h1> search not found </h1>
+            )
+        }
+        // const { gallery } = this.state;
+        
     }
 }
