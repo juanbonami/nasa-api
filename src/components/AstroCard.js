@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Image, Segment } from 'semantic-ui-react'
+import { Grid, Image } from 'semantic-ui-react'
 
 const AstroCard = (props) => {
 
@@ -21,7 +21,7 @@ const AstroCard = (props) => {
           
           {/* <Image src={hdurl} alt={title} /> */}
           {title}
-          <iframe src={url} style={{border: 'none'}} height="300" width="500"> Your browser does not support the video tag.</iframe>
+          <iframe src={url} style={{border: 'none'}} height="300" width="500" title="video of the day"> Your browser does not support the video tag.</iframe>
           <br/>
           <span>{date} {copyright}</span>
         </Grid.Column>

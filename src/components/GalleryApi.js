@@ -4,8 +4,6 @@ import { Segment, Input } from 'semantic-ui-react'
 import { Button } from 'semantic-ui-react'
 import { Grid, Image, Divider } from 'semantic-ui-react'
 import { Icon } from 'semantic-ui-react'
-import logo from '../giphy/giphy.gif'
-import ImageBodyTwo from './ImageBodyTwo';
 
 
 export default class GalleryApi extends Component {
@@ -18,6 +16,8 @@ export default class GalleryApi extends Component {
             userInput: ''
 
         }
+        this.changeHandler = this.changeHandler.bind(this);
+        this.submitHandler = this.submitHandler.bind(this);
     }
 
 
@@ -37,7 +37,7 @@ export default class GalleryApi extends Component {
 
         axios.get(`https://images-api.nasa.gov/search?q=${this.state.userInput}`)
             .then(Response => {
-
+                console.log(Response.status);
                 this.setState({
                     gallery: Response.data.collection.items
                 })
@@ -51,6 +51,7 @@ export default class GalleryApi extends Component {
 
 
     render() {
+         
         // const { gallery } = this.state;
         return (
             // <GalleryCard data={gallery} />
