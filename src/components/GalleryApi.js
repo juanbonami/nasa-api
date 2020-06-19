@@ -14,7 +14,7 @@ export default class GalleryApi extends Component {
 
             gallery: [],
             userInput: '',
-            status: ''
+            status: null
 
         }
         this.changeHandler = this.changeHandler.bind(this);
@@ -43,6 +43,7 @@ export default class GalleryApi extends Component {
                     gallery: Response.data.collection.items,
                     status: Response.status
                 })
+                console.log(this.state.status)
             })
             .catch(error => {
                 console.log(error)
@@ -53,8 +54,7 @@ export default class GalleryApi extends Component {
 
 
     render() {
-         if (this.state.status === 'status') {
-
+        
             return (
             // <GalleryCard data={gallery} />
             <div className="gallery-color">
@@ -77,11 +77,9 @@ export default class GalleryApi extends Component {
                     <Divider vertical inverted> <Icon circular inverted name='search' /> </Divider>
                 </Segment>
 
-                    
-                    
                 </form>
 
-
+                
                 {this.state.gallery.map((iterate) => {
 
                     return (
@@ -100,18 +98,10 @@ export default class GalleryApi extends Component {
                             </Grid>
                         </div>
                     )
-                })}
-
-             
+                })} 
             </div>
-            
-
         )
-        } else {
-            return (
-                <h1> search not found </h1>
-            )
-        }
+        
         // const { gallery } = this.state;
         
     }
