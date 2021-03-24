@@ -62,7 +62,7 @@ export default class GalleryApi extends Component {
                 <form onSubmit={this.submitHandler} >
 
                 <Segment placeholder inverted>
-                    <Grid columns={2} relaxed='very' stackable>
+                    <Grid columns={1} relaxed='very' stackable>
                         <Grid.Column>
                             <h1> Search the NASA Image Library </h1>
                             <h5> <u> <Icon circular inverted name='arrow alternate circle down outline' /> search below </u></h5>
@@ -71,10 +71,10 @@ export default class GalleryApi extends Component {
                         </Grid.Column>
 
                         <Grid.Column verticalAlign='middle'>
-                            <Button style={{paddingLeft: 80, paddingRight: 80}} type="submit" primary>Search</Button>
+                            <Button type="submit" primary>Search</Button>
                         </Grid.Column>
                     </Grid>
-                    <Divider vertical inverted> <Icon circular inverted name='search' /> </Divider>
+                    <Icon circular inverted name='search' />
                 </Segment>
 
                 </form>
@@ -82,20 +82,13 @@ export default class GalleryApi extends Component {
                 {this.state.gallery.map((iterate) => {
                     if (iterate.data[0].media_type === 'image') {
                       return (
-                        <div style={{paddingTop: 80}}>
-                            {/* <img src={iterate.links[0].href} height="300" width="300"></img>
-                            <h1> {iterate.data[0].description} </h1> */}
-                            <Grid>
-                                <Grid.Row style={{ paddingLeft: 100 }}>
-                                    <Grid.Column width={5}>
-                                        {/* {console.log(iterate.data[0].media_type)} */}
-                                        <Image src={iterate.links[0].href} />
-                                    </Grid.Column>
-                                    <Grid.Column width={10}>
-                                        <h2> {iterate.data[0].description} </h2>
-                                    </Grid.Column>                                   
-                                </Grid.Row>
-                            </Grid>
+                        <div className="image-layout">
+                            <div className="image-container">
+                                <img className="searched-image" src={iterate.links[0].href} alt="nasa"></img>
+                            </div>
+                            <div className="description-container">
+                               <h2 className="searched-description"> {iterate.data[0].description} </h2> 
+                            </div>       
                         </div>
                     )  
                     }
