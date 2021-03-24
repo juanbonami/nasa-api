@@ -16,7 +16,7 @@ export default class IssTracker extends Component {
     componentDidMount() {
 
         setInterval(() => {
-            axios.get('https://api.open-notify.org/iss-now.json')
+            axios.get('http://api.open-notify.org/iss-now.json')
                 .then(Response => {
             
                     this.setState({

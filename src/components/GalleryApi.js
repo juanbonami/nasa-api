@@ -78,16 +78,17 @@ export default class GalleryApi extends Component {
                 </Segment>
 
                 </form>
-
+                
                 {this.state.gallery.map((iterate) => {
-
-                    return (
+                    if (iterate.data[0].media_type === 'image') {
+                      return (
                         <div style={{paddingTop: 80}}>
                             {/* <img src={iterate.links[0].href} height="300" width="300"></img>
                             <h1> {iterate.data[0].description} </h1> */}
-                            <Grid celled>
+                            <Grid>
                                 <Grid.Row style={{ paddingLeft: 100 }}>
                                     <Grid.Column width={5}>
+                                        {/* {console.log(iterate.data[0].media_type)} */}
                                         <Image src={iterate.links[0].href} />
                                     </Grid.Column>
                                     <Grid.Column width={10}>
@@ -96,12 +97,12 @@ export default class GalleryApi extends Component {
                                 </Grid.Row>
                             </Grid>
                         </div>
-                    )
+                    )  
+                    }
+                    
                 })} 
             </div>
         )
-        
-        // const { gallery } = this.state;
         
     }
 }
