@@ -69,7 +69,7 @@ body {
 
 .image-layout {
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .searched-image {
@@ -88,4 +88,21 @@ body {
 .description-container {
   width: 50%;
   padding: 1rem;
+}
+
+@media (max-width: 629px) {
+  .image-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .description-container {
+    width: 100%;
+  }
 }
