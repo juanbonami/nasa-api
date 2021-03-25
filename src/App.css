@@ -85,23 +85,6 @@ body {
   padding: 1rem;
 }
 
-@media (max-width: 629px) {
-  .image-layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-  .image-container {
-    width: 100%;
-  }
-
-  .description-container {
-    width: 100%;
-  }
-}
-
 /* HOME LAYOUT (APOTD) */
 
 .home-container {
@@ -117,12 +100,46 @@ body {
 
 .container-image {
   width: 50%;
+  padding: 1.5rem;
 }
 
 .container-description {
   width: 50%;
+  padding: 1.5rem;
 }
 
 .image-of-the-day {
   width: 100%;
+}
+
+@media (max-width: 629px) {
+  /* image gallery */
+  .image-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .description-container {
+    width: 100%;
+  }
+
+  /* home layout */
+  .container-img-des {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-image {
+    width: 100%;
+  }
+
+  .container-description {
+    width: 100%;
+  }
 }
