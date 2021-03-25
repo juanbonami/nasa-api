@@ -39,13 +39,6 @@ body {
   padding-left: 35px;
 }
 
-.astro-color {
-  background-color: rgb(27, 28, 29);
-  color: #ddd;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
 .gallery-color {
   background-color: rgb(27, 28, 29);
   color: #ddd;
@@ -66,6 +59,8 @@ body {
   font-family: "Cinzel", serif;
   /* https://alphauniverseglobal.media.zestyio.com/Alpha-Universe-Rachel-Ross-Jones-lady-boot-arch2.jpg */
 }
+
+/* IMAGE GALLERY LAYOUT */
 
 .image-layout {
   display: flex;
@@ -105,4 +100,12 @@ body {
   .description-container {
     width: 100%;
   }
+}
+
+/* HOME LAYOUT (APOTD) */
+
+.home-container {
+  background-color: rgb(27, 28, 29);
+  color: #ddd;
+  padding: 70px 0;
 }
