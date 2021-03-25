@@ -110,8 +110,9 @@ body {
   padding: 70px 0;
 }
 
-.container {
+.container-img-des {
   display: flex;
+  margin: 0;
 }
 
 .container-image {
