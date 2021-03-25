@@ -35,17 +35,15 @@ const AstroCard = (props) => {
   } else {
     
     return (
-      <div className="astro-color">   
+      <div className="home-container">   
         <h3>Astronomy Photo of The Day</h3>
         <h6>{title}</h6>  
         <Image src={hdurl} alt={title} />
         <span>{date} {copyright}</span>
         <p>{explanation}</p>
       </div>
-      
     )
   }
-  
 };
 
 export default AstroCard;
