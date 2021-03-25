@@ -109,3 +109,19 @@ body {
   color: #ddd;
   padding: 70px 0;
 }
+
+.container {
+  display: flex;
+}
+
+.container-image {
+  width: 50%;
+}
+
+.container-description {
+  width: 50%;
+}
+
+.image-of-the-day {
+  width: 100%;
+}
