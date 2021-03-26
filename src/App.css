@@ -57,7 +57,12 @@ body {
   padding-bottom: 80px;
   font-family: "Bellota", cursive;
   font-family: "Cinzel", serif;
+  text-shadow: 6px 6px 6px black;
   /* https://alphauniverseglobal.media.zestyio.com/Alpha-Universe-Rachel-Ross-Jones-lady-boot-arch2.jpg */
+}
+
+.space-giphy h1 {
+  font-size: 4rem;
 }
 
 /* IMAGE GALLERY LAYOUT */
