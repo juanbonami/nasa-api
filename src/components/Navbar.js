@@ -30,13 +30,13 @@ export default class Navbar extends Component {
                         as={Link}
                         to='/gallery'
                     />
-                    <Menu.Item
+                    {/* <Menu.Item
                         name='About'
                         active={activeItem === 'About'}
                         onClick={this.handleItemClick}
                         as={Link}
                         to='/about'
-                    />
+                    /> */}
 
                 </Menu>
              
