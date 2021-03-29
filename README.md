@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/701103b0-6d3d-4b72-84af-382a880c2880/deploy-status)](https://app.netlify.com/sites/happy-northcutt-10d93b/deploys)
+
 Third party API: https://api.nasa.gov/
 
 App is for educational purposes for those interested in Astronomy.
