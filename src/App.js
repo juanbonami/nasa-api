@@ -22,7 +22,6 @@ function App() {
       <Router>
         
         <Navbar />
-        <IssTracker />
         <ImageBody/>
         <Route exact path="/gallery" component={GalleryApi} />
         {/* <Route exact path="/about" component={About} /> */}

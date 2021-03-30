@@ -15,7 +15,22 @@ export default class IssTracker extends Component {
 
     // componentDidMount() {
 
-        
+    //     setInterval(() => {
+    //         axios.get('http://api.open-notify.org/iss-now.json')
+    //             .then(Response => {
+            
+    //                 this.setState({
+
+    //                     latitude: Response.data.iss_position.latitude,
+    //                     longitude: Response.data.iss_position.longitude
+
+    //                 })
+    //             })
+    //             .catch(error => {
+    //                 console.log(error)
+    //             })
+    //     }, 1000)
+
 
     // }
 
@@ -23,22 +38,6 @@ export default class IssTracker extends Component {
 
 
     render() {
-        setInterval(() => {
-            axios.get('http://api.open-notify.org/iss-now.json')
-                .then(Response => {
-            
-                    this.setState({
-
-                        latitude: Response.data.iss_position.latitude,
-                        longitude: Response.data.iss_position.longitude
-
-                    })
-                })
-                .catch(error => {
-                    console.log(error)
-                })
-        }, 1000)
-
         return (
             <div className="iss-color">              
                   <p> <Icon circular inverted name='map marker alternate' /> <b>The ISS is currently:</b> <b>{this.state.latitude}° N,</b> <b>{this.state.longitude}°E</b>  </p>  
