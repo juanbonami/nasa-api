@@ -9,35 +9,35 @@ const AstroCard = (props) => {
 
   if (media_type === 'video') {
     return (
-    <div className="astro-color">   
+      <div className="home-container">
 
-      <h6>{title}</h6>
-      <span>{date} {copyright}</span>
-      <div className="container-img-des">
-        <div className="container-image">
-        <iframe className="image-of-the-day" src={url} title="video of the day"> Your browser does not support the video tag.</iframe>  
-      </div>
-      <div className="container-description">
-        <p>{explanation}</p> 
-      </div>
-      </div>
-          
-      
-    </div>
-    
-  )
-  } else {
-    
-    return (
-      <div className="home-container">   
         <h6>{title}</h6>
         <span>{date} {copyright}</span>
         <div className="container-img-des">
           <div className="container-image">
-            <img className="image-of-the-day" src={hdurl} alt={title}></img>  
+            <iframe className="image-of-the-day" src={url} title="video of the day"> Your browser does not support the video tag.</iframe>
           </div>
           <div className="container-description">
-            <p>{explanation}</p> 
+            <p>{explanation}</p>
+          </div>
+        </div>
+
+
+      </div>
+
+    )
+  } else {
+
+    return (
+      <div className="home-container">
+        <h6>{title}</h6>
+        <span>{date} {copyright}</span>
+        <div className="container-img-des">
+          <div className="container-image">
+            <img className="image-of-the-day" src={hdurl} alt={title}></img>
+          </div>
+          <div className="container-description">
+            <p>{explanation}</p>
           </div>
         </div>
       </div>
