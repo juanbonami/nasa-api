@@ -33,8 +33,7 @@ body {
 }
 
 .nav-color {
-  /* background-color: rgb(27, 28, 29); */
-  background-color: red;
+  background-color: rgb(27, 28, 29);
   padding-top: 20px;
   padding-bottom: 15px;
   padding-left: 35px;
