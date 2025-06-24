@@ -79,21 +79,21 @@ export default class GalleryApi extends Component {
 
                 </form>
                 
-                {this.state.gallery.map((iterate) => {
-                    if (iterate.data[0].media_type === 'image') {
-                      return (
-                        <div className="image-layout">
-                            <div className="image-container">
-                                <img className="searched-image" src={iterate.links[0].href} alt="nasa"></img>
-                            </div>
-                            <div className="description-container">
-                               <h2 className="searched-description"> {iterate.data[0].description} </h2> 
-                            </div>       
-                        </div>
-                    )  
-                    }
-                    
-                })} 
+                <div className="image-layout">
+                    {this.state.gallery.map((iterate, index) => {
+                        if (iterate.data[0].media_type === 'image') {
+                            return (
+                                <React.Fragment key={index}>
+                                <div className="image-container">
+                                    <img className="searched-image" src={iterate.links[0].href} alt="nasa" />
+                                    <h2 className="searched-description">{iterate.data[0].description}</h2>
+                                </div>
+                                </React.Fragment>
+                            );
+                        }
+                    })}
+                </div>
+                 
             </div>
         )
         

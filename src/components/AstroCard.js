@@ -31,7 +31,7 @@ const AstroCard = (props) => {
     return (
       <div className="home-container">
         <h6>{title}</h6>
-        <span>{date} {copyright}</span>
+        <h6>{date} {copyright}</h6>
         <div className="container-img-des">
           <div className="container-image">
             <img className="image-of-the-day" src={hdurl} alt={title}></img>

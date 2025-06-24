@@ -70,6 +70,7 @@ body {
 .image-layout {
   display: flex;
   padding: 1rem;
+  flex-flow: wrap;
 }
 
 .searched-image {
@@ -77,16 +78,16 @@ body {
 }
 
 .searched-description {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .image-container {
-  width: 50%;
+  width: 20%;
   padding: 1rem;
 }
 
 .description-container {
-  width: 50%;
+  width: 20%;
   padding: 1rem;
 }
 
@@ -99,17 +100,24 @@ body {
 }
 
 .container-img-des {
-  display: flex;
+  /* display: flex;
+  margin: 0; */
+  width: 50%;
+  /* display: flex; */
+  flex-direction: column;
   margin: 0;
+  flex-wrap: wrap;
+  align-content: center;
+  display: inline-flex;
 }
 
 .container-image {
-  width: 50%;
+  width: 85%;
   padding: 1.5rem;
 }
 
 .container-description {
-  width: 50%;
+  width: 85%;
   padding: 1.5rem;
 }
 
@@ -136,6 +144,7 @@ body {
 
   /* home layout */
   .container-img-des {
+    width: 90%;
     flex-direction: column;
     align-items: center;
   }
